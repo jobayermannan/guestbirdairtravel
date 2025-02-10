@@ -76,7 +76,7 @@ const Header = () => {
               to="/destination"
               className="text-[#1a093f] font-urbanist font-medium text-lg"
             >
-              Destination
+              Visa Service
             </NavLink>
             <NavLink
               to="/tour-package"

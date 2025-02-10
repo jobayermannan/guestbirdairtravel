@@ -1,16 +1,18 @@
 import React from 'react';
 import Header from './Header';
 import HeroSection_ImageGallery from './HeroSection_ImageGallery';
+import ServicesLayout from './ServicesLayout'; // Import ServicesLayout
 
 const Layout = () => {
   return (
     <div className="w-full bg-[#f9f9ff]">
       <Header />
-      
+
       {/* Main content area constrained to 1240px */}
-      <div className="max-w-[1240px] mx-auto min-h-screen flex flex-col ">
+      <div className="max-w-[1240px] mx-auto min-h-screen flex flex-col">
         <div className="flex flex-row flex-grow items-center justify-between">
           <HeroSection_ImageGallery className="flex-grow h-auto" />
+          
           <div
             className="w-[443px] h-[494px] bg-cover opacity-70"
             style={{
@@ -19,6 +21,9 @@ const Layout = () => {
           />
         </div>
       </div>
+
+      {/* ServicesLayout added here, directly below the image gallery */}
+      <ServicesLayout /> {/* This will render the services section under the Hero Section */}
     </div>
   );
 };
